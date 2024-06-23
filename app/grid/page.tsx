@@ -13,15 +13,15 @@ const Grid = () => {
 
   return (
     <div className="bg-gray-200 min-h-screen p-4">
-      <ColorGrid
-        gridHeight={Number(gridHeight)}
-        gridWidth={Number(gridWidth)}
-        colors={
-          colors != null && colors.length > 0
-            ? colors.map((c) => `#${c}`)
-            : undefined
-        }
-      />
+        <ColorGrid
+          gridHeight={Number(gridHeight)}
+          gridWidth={Number(gridWidth)}
+          colors={
+            colors != null && colors.length > 0
+              ? colors.map((c) => `#${c}`)
+              : undefined
+          }
+        />
     </div>
   );
 };
